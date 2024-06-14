@@ -1,0 +1,22 @@
+fieldset {
+  border: 2px solid purple;
+  padding: 20px;
+}
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: purple;
+}
+.payment-icons img {
+  width: 50px;
+  margin-right: 10px;
+}
+.error-message {
+  background-color: rgb(255, 180, 180);
+  color: rgb(255, 0, 0);
+  padding: 5px;
+  display: inline-block;
+  border-radius: 3px;
+  width: 100%;
+  font-weight: bold;
+}

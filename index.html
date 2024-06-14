@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form Example</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <form>
+        <fieldset>
+          <legend>Payment form example</legend>
+          <div class="form-group">
+            <label class="error-message">Some fields are missing</label>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="card">Card #</label>
+              <input
+            type="text"
+            class="form-control"
+            id="card"
+            name="card"
+            value="XXXXXXXXXXXXXXX"
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="cvc">CVC #</label>
+              <input
+            type="text"
+            class="form-control"
+            id="cvc"
+            name="cvc"
+            value="0000"
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="amount">Amount</label>
+              <input
+            type="text"
+            class="form-control"
+            id="amount"
+            name="amount"
+            value="$ Amount"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="first-name">First Name</label>
+              <input
+            type="text"
+            class="form-control"
+            id="first-name"
+            name="first-name"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="last-name">Last Name</label>
+              <input
+            type="text"
+            class="form-control"
+            id="last-name"
+            name="last-name"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="state">State</label>
+              <select id="state" name="state" class="form-control">
+            <option value="">Pick a state</option>
+            <!-- Add more options as needed -->
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="postal-code">Postal Code</label>
+              <input
+            type="text"
+            class="form-control"
+            id="postal-code"
+            name="postal-code"
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label>We accept:</label>
+              <div class="payment-icons">
+            <!-- Add payment icons here -->
+            <img src="visa.png" alt="Visa" />
+            <img src="mastercard.png" alt="MasterCard" />
+            <img src="amex.png" alt="American Express" />
+            <img src="discover.png" alt="Discover" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              placeholder="Add any notes here."
+            ></textarea>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button
+              type="button"
+              class="btn btn-primary"
+              style="background-color: grey"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </fieldset>
+        </fieldset>
+      </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
